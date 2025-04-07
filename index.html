@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Memory Game" />
+    <meta name="keywords" content="Memory Game" />
+    <meta name="author" content="Acadabra" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <section class="div-game">
+      <div class="top-div">
+        <span> Player Name: <input type="text" class="inp-name" id="player-name" name="player-name" onchange="localStorage.setItem('userName', JSON.stringify(this.value))" placeholder="User Name" /> </span>
+        <!-- <span> True: <b id="true">0</b> </span> -->
+        <span> Wrong: <b id="trys">0</b> </span>
+      </div>
+      <div class="block-div" id="block-div">
+        <div class="game-blocks" data-name="apple">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/apple.png" alt="img-game" />
+          </span>
+        </div>
+        <div class="game-blocks" data-name="apple">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/apple.png" alt="img-game" width="150" height="150" />
+          </span>
+        </div>
+        <div class="game-blocks" data-name="kiwi">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/kiwi.png" alt="img-game" width="150" height="150" />
+          </span>
+        </div>
+        <div class="game-blocks" data-name="kiwi">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/kiwi.png" alt="img-game" width="150" height="150" />
+          </span>
+        </div>
+        <div class="game-blocks" data-name="mango">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/mango.png" alt="img-game" width="150" height="150" />
+          </span>
+        </div>
+        <div class="game-blocks" data-name="mango">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/mango.png" alt="img-game" width="150" height="150" />
+          </span>
+        </div>
+        <div class="game-blocks" data-name="orange">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/orange.png" alt="img-game" width="150" height="150" />
+          </span>
+        </div>
+        <div class="game-blocks" data-name="orange">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/orange.png" alt="img-game" width="150" height="150" />
+          </span>
+        </div>
+        <div class="game-blocks" data-name="pananna">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/pananna.png" alt="img-game" width="150" height="150" />
+          </span>
+        </div>
+        <div class="game-blocks" data-name="pananna">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/pananna.png" alt="img-game" width="150" height="150" />
+          </span>
+        </div>
+        <div class="game-blocks" data-name="red-apple">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/red-apple.png" alt="img-game" width="150" height="150" />
+          </span>
+        </div>
+        <div class="game-blocks" data-name="red-apple">
+          <span class="face front"> </span>
+          <span class="face back">
+            <img src="./img/red-apple.png" alt="img-game" width="150" height="150" />
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
